@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Slider</title>
+    <link rel="stylesheet" href="tast.css">
+</head>
+<body>
+    <section class="container">
+        <div class="order-form">
+            <div class="content">
+                <h2>ОТРИМАТИ РОЗРАХУНОК ВАРТОСТІ ДОСТАВКИ ВАШОГО ВАНТАЖУ</h2>
+                <ul class="steps">
+                    <li class="step-activ">1</li>
+                    <li class="step">2</li>
+                    <li class="step">3</li>
+                </ul>
+                <div class="form-container">
+                    <ul class="form-grid">
+                        <li class="form-group">
+                            <label for="category">Категорія товару:</label>
+                            <input type="text" id="category" placeholder="Введіть категорію">
+                        </li>
+            
+                        <li class="form-group">
+                            <label for="cost">Вартість вантажу:</label>
+                            <input type="number" id="cost" placeholder="Введіть вартість">
+                        </li>
+            
+                        <li class="form-group">
+                            <label for="weight">Вага вантажу (кг):</label>
+                            <input type="number" id="weight" placeholder="Введіть вагу">
+                        </li>
+            
+                        <li class="form-group">
+                            <label for="volume">Обсяг вантажу (м³): <a href="#" class="calc-text">Розрахувати</a></label>
+                            <input type="number" id="volume" placeholder="Введіть обсяг">
+                        </li>
+        
+                        <li class="checkbox-group">
+                            <label><input type="checkbox" id="insurance"> Страховка</label>
+                            <label><input type="checkbox" id="custom-clearance" checked> Митне оформлення</label>
+                        </li>
+            
+                        <li class="form-group">
+                            <label for="code">Код ТН ВЭД:</label>
+                            <input type="text" id="code" placeholder="Введіть код">
+                        </li>
+            
+                    </ul>
+                    <div class="by-text">
+                        <span>фотографія.jpeg</span>
+                        <span id="deleteFile"><a href="#" class="delete-text">Видалити фото</a></span>
+                    </div>
+                    <div class="file-upload" id="fileUpload">
+                        <span id="fileUploadText">Завантажити фото товару</span>
+                    </div>
+        
+                    <button class="btn">
+                        Наступний крок
+                        <svg width="27" height="27">
+                            <use href="./Images/icons.svg#icon-arrow-circle-left">
+                        </svg>
+                    </button>
+                </div>
+                <script src="test-script.js"></script>
+                
+                </div>
+                <img width="625" height="917" src="./Images/man.svg" alt="Worker" class="worker-image">
+        </div>
+    </section>
+    
+</body>
+</html>
