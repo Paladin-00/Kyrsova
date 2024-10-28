@@ -28,50 +28,50 @@
     </header>
     <main>
         <section class="container">
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
+            <div class="slider-content">
+                <div class="slides-content">
+                    <div class="slide-content">
                         <img  src="Images/dostavks 1.svg" alt="Image 1">
-                        <div class="info-slide">
+                        <div class="info-slide-content">
                             <h1>ГАРАНТУЄМ ТЕРМІНИ!</h1>
                             <p>Якщо ми не вкладемось в зазначений терміни, доставка вантажу зі знижкою до 90%</p>
-                            <button class="slide-buttom" type="button">Розрахувати вартість
+                            <button class="slide-buttom-content" type="button">Розрахувати вартість
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide-content">
                         <img  src="Images/dostavks 2.svg" alt="Image 2">
-                        <div class="info-slide">
+                        <div class="info-slide-content">
                             <h1>ВИКУП ТОВАРУ З ТАОБАО, 1688</h1>
                             <p>Викуп та доставка товарів з китайських торгових майданчиків</p>
-                            <button class="slide-buttom" type="button">Розрахувати вартість
+                            <button class="slide-buttom-content" type="button">Розрахувати вартість
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide-content">
                         <img  src="Images/dostavks 3.svg" alt="Image 3">
-                        <div class="info-slide">
+                        <div class="info-slide-content">
                             <h1>ЕКСПРЕС АВТО ДОСТАВКА</h1>
                             <p>Доставка автотранспортом з Китаю до України від 15 днів, від $0,5/кг</p>
-                            <button class="slide-buttom" type="button">Розрахувати вартість
+                            <button class="slide-buttom-content" type="button">Розрахувати вартість
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide-content">
                         <img  src="Images/dostavks 4.svg" alt="Image 4">
-                        <div class="info-slide">
+                        <div class="info-slide-content">
                             <h1>ПРЯМЕ КАРГО З КИТАЮ</h1>
                             <p>Доставляємо будь-які вантажі з Китаю за чесною ціною</p>
-                            <button class="slide-buttom" type="button">Розрахувати вартість
+                            <button class="slide-buttom-content" type="button">Розрахувати вартість
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </svg>
@@ -80,23 +80,23 @@
                     </div>
                 </div>
                 <!-- Navigation buttons -->
-                <button class="prev" onclick="prevSlide()">
+                <button class="prev-content" onclick="prevSlide()">
                     <svg width="44" height="44">
                         <use href="./Images/icons.svg#icon-arrow-left">
                     </svg>
                 </button>
-                <button class="next" onclick="nextSlide()">
+                <button class="next-content" onclick="nextSlide()">
                     <svg width="44" height="44">
                         <use href="./Images/icons.svg#icon-arrow-right">
                     </svg>
                 </button>
                 
                 <!-- Dots for navigation -->
-                <div class="dots">
-                    <span class="dot" onclick="currentSlide(0)"></span>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                <div class="dots-content">
+                    <span class="dot-content" onclick="currentSlide(0)"></span>
+                    <span class="dot-content" onclick="currentSlide(1)"></span>
+                    <span class="dot-content" onclick="currentSlide(2)"></span>
+                    <span class="dot-content" onclick="currentSlide(3)"></span>
                 </div>
             </div>
         
@@ -163,6 +163,274 @@
                     
                     </div>
                     <img width="625" height="917" src="./Images/man.svg" alt="Worker" class="worker-image">
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="advantages-h2">Чому варто вибрати саме нас?</h2>
+                <ul class="advantage-items">
+                    <li class="advantage-item">
+                        <div class="circle">
+                            <svg width="50" height="50" >
+                                <use href="./Images/icons.svg#icon-file">
+                            </svg>
+                        </div>
+                        <p>Митне оформлення вантажу</p>
+                    </li>
+                    <li class="advantage-item">
+                        <div class="circle">
+                            <svg  width="50" height="50">
+                                <use href="./Images/icons.svg#icon-check-mark">
+                            </svg>
+                        </div>
+                        <p>Страхування вантажу</p>
+                    </li>
+                    <li class="advantage-item">
+                        <div class="circle">
+                            <svg  width="55" height="55">
+                                <use href="./Images/icons.svg#icon-magnifying-glass">
+                            </svg>
+                        </div>
+                        <p>Перевірка товару на брак</p>
+                    </li>
+                    <li class="advantage-item">
+                        <div class="circle">
+                            <svg  width="63" height="63">
+                                <use href="./Images/icons.svg#icon-delivery-truck">
+                            </svg>
+                        </div>
+                        <p>Доставка у будь-яке місто України</p>
+                    </li>
+                    <li class="advantage-item">
+                        <div class="circle">
+                            <svg  width="50" height="50">
+                                <use href="./Images/icons.svg#icon-speech-bubble">
+                            </svg>
+                        </div>
+                        <p>Консолідація на складі</p>
+                    </li>
+                    <li class="advantage-item">
+                        <div class="circle">
+                            <svg  width="47" height="47">
+                                <use href="./Images/icons.svg#icon-like">
+                            </svg>
+                        </div>
+                        <p>Відповідальне зберігання вантажу</p>
+                    </li>
+                    <li class="advantage-item">
+                        <div class="circle">
+                            <svg  width="50" height="50">
+                                <use href="./Images/icons.svg#icon-credit-card">
+                            </svg>
+                        </div>
+                        <p>Допомога в оплаті товару</p>
+                    </li>
+                    <li class="advantage-item">
+                        <div class="circle">
+                            <svg  width="46" height="46">
+                                <use href="./Images/icons.svg#icon-stack">
+                            </svg>
+                        </div>
+                        <p>Упаковка, перепакування, палетування вантажу до міжнародного перевезення</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="container">
+            <div class="delivery">
+                <h2>ВАРІАНТИ ДОСТАВКИ ВАНТАЖІВ З КИТАЮ</h2>
+            <div class="sliders-delivery">
+                <button class="slider-btn prev-btn">
+                    <svg width="44" height="44">
+                        <use href="./Images/icons.svg#icon-arrow-left">
+                    </svg>
+                </button>
+                <ul class="slider-delivery">
+                    <li class="slide-delivery">
+                        <img src="./Images/delivery 1.svg" alt="">
+                        <div class="category-delivery">
+                            <h3>Авто - звичайна</h3>
+                            <div class="info-delivery">
+                                <svg width="22" height="22">
+                                    <use href="./Images/icons.svg#icon-calendar">
+                                </svg>
+                                <p>9-15 днів</p>
+                                <svg width="24" height="24">
+                                    <use href="./Images/icons.svg#icon-box">
+                                </svg>
+                                <p>від 5 кг</p>
+                            </div>
+                            <div class="prise-delivery">
+                                <span class="step1">від</span>
+                                <span class="step2">2,5</span>
+                                <span class="step3">$/кг</span>
+                            </div>
+                            <div class="button-delivery">
+                                <button class="but-1" type="button">Залишити заявку</button>
+                                <button class="but-2" type="button">Детальніше</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide-delivery">
+                        <img src="./Images/delivery 2.svg" alt="">
+                        <div class="category-delivery">
+                            <h3>Авто - прискорена</h3>
+                            <div class="info-delivery">
+                                <svg width="22" height="22">
+                                    <use href="./Images/icons.svg#icon-calendar">
+                                </svg>
+                                <p>9-15 днів</p>
+                                <svg width="24" height="24">
+                                    <use href="./Images/icons.svg#icon-box">
+                                </svg>
+                                <p>від 5 кг</p>
+                            </div>
+                            <div class="prise-delivery">
+                                <span class="step1">від</span>
+                                <span class="step2">2,5</span>
+                                <span class="step3">$/кг</span>
+                            </div>
+                            <div class="button-delivery">
+                                <button class="but-1" type="button">Залишити заявку</button>
+                                <button class="but-2" type="button">Детальніше</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide-delivery">
+                        <img src="./Images/delivery 3.svg" alt="">
+                        <div class="category-delivery">
+                            <h3>Авіа</h3>
+                            <div class="info-delivery">
+                                <svg width="22" height="22">
+                                    <use href="./Images/icons.svg#icon-calendar">
+                                </svg>
+                                <p>9-15 днів</p>
+                                <svg width="24" height="24">
+                                    <use href="./Images/icons.svg#icon-box">
+                                </svg>
+                                <p>від 5 кг</p>
+                            </div>
+                            <div class="prise-delivery">
+                                <span class="step1">від</span>
+                                <span class="step2">2,5</span>
+                                <span class="step3">$/кг</span>
+                            </div>
+                            <div class="button-delivery">
+                                <button class="but-1" type="button">Залишити заявку</button>
+                                <button class="but-2" type="button">Детальніше</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide-delivery">
+                        <img src="./Images/delivery 4.svg" alt="">
+                        <div class="category-delivery">
+                            <h3>Залізниця</h3>
+                            <div class="info-delivery">
+                                <svg width="22" height="22">
+                                    <use href="./Images/icons.svg#icon-calendar">
+                                </svg>
+                                <p>9-15 днів</p>
+                                <svg width="24" height="24">
+                                    <use href="./Images/icons.svg#icon-box">
+                                </svg>
+                                <p>від 5 кг</p>
+                            </div>
+                            <div class="prise-delivery">
+                                <span class="step1">від</span>
+                                <span class="step2">2,5</span>
+                                <span class="step3">$/кг</span>
+                            </div>
+                            <div class="button-delivery">
+                                <button class="but-1" type="button">Залишити заявку</button>
+                                <button class="but-2" type="button">Детальніше</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide-delivery">
+                        <img src="./Images/delivery 5.svg" alt="">
+                        <div class="category-delivery">
+                            <h3>Море</h3>
+                            <div class="info-delivery">
+                                <svg width="22" height="22">
+                                    <use href="./Images/icons.svg#icon-calendar">
+                                </svg>
+                                <p>9-15 днів</p>
+                                <svg width="24" height="24">
+                                    <use href="./Images/icons.svg#icon-box">
+                                </svg>
+                                <p>від 5 кг</p>
+                            </div>
+                            <div class="prise-delivery">
+                                <p class="step1">від  </p>
+                                <p class="step2">2,5</p>
+                                <p class="step3">$/кг</p>
+                            </div>
+                            <div class="button-delivery">
+                                <button class="but-1" type="button">Залишити заявку</button>
+                                <button class="but-2" type="button">Детальніше</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="slider-btn next-btn">
+                    <svg width="44" height="44">
+                        <use href="./Images/icons.svg#icon-arrow-right">
+                    </svg>
+                </button>
+            </div>
+            <script src="js-test.js"></script>
+            </div>
+        </section>
+        <section class="container">
+            <div class="services">
+                <h2>ПОСЛУГИ</h2>
+            <div class="sliders-services">
+                <button class="slider-services-btn prev-services-btn">
+                    <svg width="44" height="44">
+                        <use href="./Images/icons.svg#icon-arrow-left">
+                    </svg>
+                </button>
+                <ul class="slider-services">
+                    <li class="slide-services">
+                        <img src="./Images/servise 1.svg" alt="">
+                        <div class="version">
+                            <h3>Викуп товару</h3>
+                            <p>Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
+                            <button class="but-2" type="button">Детальніше</button>
+                        </div>
+                    </li>
+                    <li class="slide-services">
+                        <img width="360" height="482" src="./Images/servise 2.svg" alt="">
+                        <div class="version">
+                            <h3>Страхування вантажу</h3>
+                            <p>Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
+                            <button class="but-2" type="button">Детальніше</button>
+                        </div>
+                    </li>
+                    <li class="slide-services">
+                        <img width="360" height="482" src="./Images/servise 3.svg" alt="">
+                        <div class="version">
+                            <h3>Оренда складу</h3>
+                            <p>Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
+                            <button class="but-2" type="button">Детальніше</button>
+                        </div>
+                    </li>
+                    <li class="slide-services">
+                        <img width="360" height="482" src="./Images/servise 4.svg" alt="">
+                        <div class="version">
+                            <h3>Переказ коштів</h3>
+                            <p>Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
+                            <button class="but-2" type="button">Детальніше</button>
+                        </div>
+                    </li>
+                </ul>
+                <button class="slider-services-btn next-services-btn">
+                    <svg width="44" height="44">
+                        <use href="./Images/icons.svg#icon-arrow-right">
+                    </svg>
+                </button>
+            </div>
+            <script src="test-js.js"></script>
             </div>
         </section>
     </main>

@@ -1,9 +1,9 @@
 let currentIndex = 0;
 
 function showSlide(index) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-    const dots = document.querySelectorAll('.dot');
+    const slides = document.querySelector('.slides-content');
+    const totalSlides = document.querySelectorAll('.slide-content').length;
+    const dots = document.querySelectorAll('.dot-content');
 
     if (index >= totalSlides) {
         currentIndex = 0;
@@ -17,8 +17,8 @@ function showSlide(index) {
     slides.style.transform = `translateX(${offset}%)`;
 
     // Обновляем активное состояние точек
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentIndex].classList.add('active');
+    dots.forEach(dot => dot.classList.remove('active-content'));
+    dots[currentIndex].classList.add('active-content');
 }
 
 function nextSlide() {
