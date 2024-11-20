@@ -3,6 +3,9 @@
     padding: 0;
 
 }
+img{
+    display: block;
+}
 :root {
     --background: #282b38;
     --hover-efect: #89c249;
@@ -584,8 +587,8 @@ body {
 
 .version {
     max-width: 307px;
-    position: relative;
-    bottom: 232px;
+    position: absolute;
+    bottom: 37px;
     left: 30px;
     h3{
         font-size: 22px;
@@ -633,9 +636,12 @@ body {
 
 .slide-services {
     position: relative;
-    top: 90px;
+    top: 0;
     max-width: 360px;
     /* background-color: #363a4d; */
+    img{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+    }
 }
 .slider-services-btn {
     position: absolute;
@@ -657,3 +663,10 @@ body {
 .next-services-btn {
     right: 0;
 }
+
+
+
+
+
+
+
