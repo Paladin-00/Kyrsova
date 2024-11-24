@@ -94,5 +94,8 @@
 <symbol id="icon-telegram" viewBox="0 0 31 32">
 <path fill="currentColor" d="M30.72 0.057l-30.72 17.274 9.818 3.635 15.142-14.191-11.518 15.533 0.009 0.004-0.012-0.004v8.459l5.506-6.421 6.974 2.582 4.8-26.871z"></path>
 </symbol>
+<symbol id="icon-burger-main" viewBox="0 0 34 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M0.296 0.593h33.185v3.081h-33.185v-3.081zM0.296 14.459h33.185v3.081h-33.185v-3.081zM0.296 28.326h33.185v3.081h-33.185v-3.081z"></path>
+</symbol>
 </defs>
 </svg>

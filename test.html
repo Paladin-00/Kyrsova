@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Slider</title>
-    <link rel="stylesheet" href="tast.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalaiz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,71 +16,104 @@
 </head>
 
 <body>
+    <!-- хеадер -->
     <header class="header">
         <div class="container">
-            <a href="Index.html"><img src="Images/logo.svg" width="172" height="48" alt="логоотип"></a>
-        <nav>
-            <ul class="header-nav">
-                <li><a href="#">Ціни та терміни</a></li>
-                <li><a href="#">Послуги</a></li>
-                <li><a href="#">Про компанію</a></li>
-                <li><a href="#">Контакти</a></li>
-                <li><a href="#">Оформити вантаж</a></li>
+            <a href="test.html"><img src="Images/logo.svg" width="172" height="48" alt="логоотип"></a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a class="header__link" href="#delivery">Ціни та терміни</a></li>
+                <li><a class="header__link" href="#services">Послуги</a></li>
+                <li><a class="header__link" href="#company">Про компанію</a></li>
+                <li><a class="header__link" href="#footer">Контакти</a></li>
+                <li><a class="header__link" href="#cooperation">Оформити вантаж</a></li>
             </ul>
         </nav>
-        <button class="header-button" type="button">Залишити заявку</button>
+        <button class="header__button" type="button">Залишити заявку</button>
+        <button class="header__burger">
+            <svg width="27" height="25">
+                <use href="./Images/icons.svg#icon-burger-main">
+            </svg>
+        </button>
         </div>
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <nav class="modal__nav">
+                    <ul class="modal__list">
+                        <li class="modal__item"><a class="modal__link" href="#delivery">Ціни та терміни</a></li>
+                        <li class="modal__item"><a class="modal__link" href="#services">Послуги</a></li>
+                        <li class="modal__item"><a class="modal__link" href="#company">Про компанію</a></li>
+                        <li class="modal__item"><a class="modal__link" href="#footer">Контакти</a></li>
+                        <li class="modal__item"><a class="modal__link" href="#cooperation">Оформити вантаж</a></li>
+                    </ul>
+                </nav>
+                <button class="modal__button" type="button">Залишити заявку
+                    <svg width="27" height="27">
+                        <use href="./Images/icons.svg#icon-arrow-circle-left">
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </header>
     <!-- Слайдер для банерів -->
     <section class="bottom-retreat">
         <div class="swiper swiper-banners">
-            <ul class="swiper-wrapper">
-                <li class="swiper-slide">
-                    <img class="swiper-img" src="./Images/dostavks 1.jpg" alt="img 1">
-                    <div class="swiper-slide-info">
-                        <h1>ГАРАНТУЄМ ТЕРМІНИ!</h1>
-                        <p>Якщо ми не вкладемось в зазначений терміни, доставка вантажу зі знижкою до 90%</p>
-                        <button type="button">Розрахувати вартість
+            <ul class="swiper-wrapper banner-wrapper">
+                <li class="swiper-slide background_img-1">
+                    <!-- <img class="swiper-img" src="./Images/dostavks 1.jpg" alt="img 1"> -->
+                    <div class="swiper__slide-content container" >
+                        <div class="slide-info">
+                            <h1 class="swiper__slide-title">ГАРАНТУЄМ ТЕРМІНИ!</h1>
+                        <p class="swiper__slide-text">Якщо ми не вкладемось в зазначений терміни, доставка вантажу зі знижкою до 90%</p>
+                        <button class="swiper__slide-button" type="button">Розрахувати вартість
                             <svg width="27" height="27">
                                 <use href="./Images/icons.svg#icon-arrow-circle-left">
                             </svg>
                         </button>
+                        </div>
                     </div>
                 </li>
-                <li class="swiper-slide">
-                    <img class="swiper-img" src="./Images/dostavks 2.jpg" alt="img 2">
-                    <div class="swiper-slide-info">
-                        <h1>ВИКУП ТОВАРУ З ТАОБАО, 1688</h1>
-                        <p>Викуп та доставка товарів з китайських торгових майданчиків</p>
-                        <button type="button">Розрахувати вартість
+                <li class="swiper-slide background_img-2">
+                    <!-- <img class="swiper-img" src="./Images/dostavks 2.jpg" alt="img 2"> -->
+                    <div class="swiper__slide-content container">
+                        <div class="slide-info">
+                            <h1 class="swiper__slide-title">ВИКУП ТОВАРУ З ТАОБАО, 1688</h1>
+                        <p class="swiper__slide-text">Викуп та доставка товарів з китайських торгових майданчиків</p>
+                        <button class="swiper__slide-button" type="button">Розрахувати вартість
                             <svg width="27" height="27">
                                 <use href="./Images/icons.svg#icon-arrow-circle-left">
                             </svg>
                         </button>
+                        </div>
                     </div>
                 </li>
-                <li class="swiper-slide">
-                    <img class="swiper-img" src="./Images/dostavks 3.jpg" alt="img 3">
-                    <div class="swiper-slide-info">
-                        <h1>ЕКСПРЕС АВТО ДОСТАВКА</h1>
-                        <p>Доставка автотранспортом з Китаю до України від 15 днів, від $0,5/кг</p>
-                        <button type="button">Розрахувати вартість
+                <li class="swiper-slide background_img-3">
+                    <!-- <img class="swiper-img" src="./Images/dostavks 3.jpg" alt="img 3"> -->
+                    <div class="swiper__slide-content container">
+                        <div class="slide-info">
+                            <h1 class="swiper__slide-title">ЕКСПРЕС АВТО ДОСТАВКА</h1>
+                        <p class="swiper__slide-text">Доставка автотранспортом з Китаю до України від 15 днів, від $0,5/кг</p>
+                        <button class="swiper__slide-button" type="button">Розрахувати вартість
                             <svg width="27" height="27">
                                 <use href="./Images/icons.svg#icon-arrow-circle-left">
                             </svg>
                         </button>
+                        </div>
                     </div>
                 </li>
-                <li class="swiper-slide">
-                    <img class="swiper-img" src="./Images/dostavks 4.jpg" alt="img 4">
-                    <div class="swiper-slide-info">
-                        <h1>ПРЯМЕ КАРГО З КИТАЮ</h1>
-                        <p>Доставляємо будь-які вантажі з Китаю за чесною ціною</p>
-                        <button type="button">Розрахувати вартість
+                <li class="swiper-slide background_img-4">
+                    <!-- <img class="swiper-img" src="./Images/dostavks 4.jpg" alt="img 4"> -->
+                    <div class="swiper__slide-content container">
+                        <div class="slide-info">
+                            <h1 class="swiper__slide-title">ПРЯМЕ КАРГО З КИТАЮ</h1>
+                        <p class="swiper__slide-text">Доставляємо будь-які вантажі з Китаю за чесною ціною</p>
+                        <button class="swiper__slide-button" type="button">Розрахувати вартість
                             <svg width="27" height="27">
                                 <use href="./Images/icons.svg#icon-arrow-circle-left">
                             </svg>
                         </button>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -89,352 +122,321 @@
             <div class="swiper-button-next swiper-button-next-banners"></div>
         </div>
         <script src="./js/swiper-bundle.min.js"></script>
-        <script>
-            // Слайдер для банерів
-        const swiperBanners = new Swiper('.swiper-banners', {
-            loop: true,
-            // slidesPerView: 3,
-            spaceBetween: 10,
-            pagination: {
-                el: '.swiper-pagination-banners',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next-banners',
-                prevEl: '.swiper-button-prev-banners',
-            },
-        });
-        </script>
+        <script src="./js/baner-slider.js"></script>
     </section>
     <!-- Перевагі -->
     <section class="advantages">
         <div class="container">
-            <h2 class="advantages-h2">Чому варто вибрати саме нас?</h2>
-            <div class="advantages-line"></div>
-            <ul class="advantage-items">
-                <li class="advantage-item">
-                    <div class="border-circle">
-                        <div class="circle">
-                            <svg width="50" height="50" >
-                                <use href="./Images/icons.svg#icon-file">
-                            </svg>
+            <h2 class="advantages__title">Чому варто вибрати саме нас?</h2>
+            <div class="advantages__line"></div>
+            <!-- Swiper -->
+            <div class="swiper advantages__swiper">
+                <ul class="swiper-wrapper advantages-wrapper">
+                    <li class="swiper-slide advantages__item">
+                        <div class="border-circle">
+                            <div class="circle">
+                                <svg width="50" height="50">
+                                    <use href="./Images/icons.svg#icon-file"></use>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <p>Митне оформлення вантажу</p>
-                </li>
-                <li class="advantage-item">
-                    <div class="border-circle">
-                        <div class="circle">
-                            <svg  width="50" height="50">
-                                <use href="./Images/icons.svg#icon-check-mark">
-                            </svg>
+                        <p class="advantages__text">Митне оформлення вантажу</p>
+                    </li>
+                    <li class="swiper-slide advantages__item">
+                        <div class="border-circle">
+                            <div class="circle">
+                                <svg width="50" height="50">
+                                    <use href="./Images/icons.svg#icon-check-mark"></use>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <p>Страхування вантажу</p>
-                </li>
-                <li class="advantage-item">
-                    <div class="border-circle">
-                        <div class="circle">
-                            <svg  width="55" height="55">
-                                <use href="./Images/icons.svg#icon-magnifying-glass">
-                            </svg>
+                        <p class="advantages__text">Страхування вантажу</p>
+                    </li>
+                    <li class="swiper-slide advantages__item">
+                        <div class="border-circle">
+                            <div class="circle">
+                                <svg width="55" height="55">
+                                    <use href="./Images/icons.svg#icon-magnifying-glass"></use>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <p>Перевірка товару на брак</p>
-                </li>
-                <li class="advantage-item">
-                    <div class="border-circle">
-                        <div class="circle">
-                            <svg  width="63" height="63">
-                                <use href="./Images/icons.svg#icon-delivery-truck">
-                            </svg>
+                        <p class="advantages__text">Перевірка товару на брак</p>
+                    </li>
+                    <li class="swiper-slide advantages__item">
+                        <div class="border-circle">
+                            <div class="circle">
+                                <svg width="63" height="63">
+                                    <use href="./Images/icons.svg#icon-delivery-truck"></use>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <p>Доставка у будь-яке місто України</p>
-                </li>
-                <li class="advantage-item">
-                    <div class="border-circle">
-                        <div class="circle">
-                            <svg  width="50" height="50">
-                                <use href="./Images/icons.svg#icon-speech-bubble">
-                            </svg>
+                        <p class="advantages__text">Доставка у будь-яке місто України</p>
+                    </li>
+                    <li class="swiper-slide advantages__item">
+                        <div class="border-circle">
+                            <div class="circle">
+                                <svg width="50" height="50">
+                                    <use href="./Images/icons.svg#icon-speech-bubble"></use>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <p>Консолідація на складі</p>
-                </li>
-                <li class="advantage-item">
-                    <div class="border-circle">
-                        <div class="circle">
-                            <svg  width="47" height="47">
-                                <use href="./Images/icons.svg#icon-like">
-                            </svg>
+                        <p class="advantages__text">Консолідація на складі</p>
+                    </li>
+                    <li class="swiper-slide advantages__item">
+                        <div class="border-circle">
+                            <div class="circle">
+                                <svg width="47" height="47">
+                                    <use href="./Images/icons.svg#icon-like"></use>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <p>Відповідальне зберігання вантажу</p>
-                </li>
-                <li class="advantage-item">
-                    <div class="border-circle">
-                        <div class="circle">
-                            <svg  width="50" height="50">
-                                <use href="./Images/icons.svg#icon-credit-card">
-                            </svg>
+                        <p class="advantages__text">Відповідальне зберігання вантажу</p>
+                    </li>
+                    <li class="swiper-slide advantages__item">
+                        <div class="border-circle">
+                            <div class="circle">
+                                <svg width="50" height="50">
+                                    <use href="./Images/icons.svg#icon-credit-card"></use>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <p>Допомога в оплаті товару</p>
-                </li>
-                <li class="advantage-item">
-                    <div class="border-circle">
-                        <div class="circle">
-                            <svg  width="46" height="46">
-                                <use href="./Images/icons.svg#icon-stack">
-                            </svg>
+                        <p class="advantages__text">Допомога в оплаті товару</p>
+                    </li>
+                    <li class="swiper-slide advantages__item">
+                        <div class="border-circle">
+                            <div class="circle">
+                                <svg width="46" height="46">
+                                    <use href="./Images/icons.svg#icon-stack"></use>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <p>Упаковка, перепакування, палетування вантажу до міжнародного перевезення</p>
-                </li>
-            </ul>
+                        <p class="advantages__text">Упаковка, перепакування, палетування вантажу до міжнародного перевезення</p>
+                    </li>
+                </ul>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination  swiper-pagination-advantages"></div>
+
+            </div>
+            <script src="./js/swiper-bundle.min.js"></script>
+            <script src="./js/advantages-slider.js"></script>
+
+
         </div>
     </section>
     <!-- Слайдер для варіантів доставки -->
-    <section class="delivery top-bottom-retreat">
+    <section id="delivery" class="delivery top-bottom-retreat">
         <div class="container">
-            <h2>варіанти доставки вантаів з китаю</h2>
-            <div class="delivery-line"></div>
+            <h2 class="delivery__title">варіанти доставки вантаів з китаю</h2>
+            <div class="delivery__line"></div>
             <div class="swiper swiper-delivery">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
-                        <img class="img-delivery" src="./Images/delivery 1.jpg" alt="delivery">
-                        <div class="category-delivery">
-                            <h3>Авто - звичайна</h3>
-                            <ul class="info-delivery">
-                                <li>
+                        <img class="delivery__img" src="./Images/delivery 1.jpg" alt="delivery">
+                        <div class="delivery__category">
+                            <h3 class="delivery__subtitle">Авто - звичайна</h3>
+                            <ul class="delivery__info-list">
+                                <li class="delivery__info-item">
                                     <svg width="22" height="22">
                                         <use href="./Images/icons.svg#icon-calendar">
                                     </svg>
                                     9-15 днів
                                 </li>
-                                <li>
+                                <li class="delivery__info-item">
                                     <svg width="24" height="24">
                                         <use href="./Images/icons.svg#icon-box">
                                     </svg>
                                     від 5 кг
                                 </li>
                             </ul>
-                            <div class="prise-delivery">
-                                <span class="step1">від</span>
-                                <span class="step2">2,5</span>
-                                <span class="step3">$/кг</span>
+                            <div class="delivery__prise">
+                                <span class="part-1">від</span>
+                                <span class="part-2">2,5</span>
+                                <span class="part-3">$/кг</span>
                             </div>
-                            <div class="button-delivery">
-                                <button class="but-1" type="button">Залишити заявку</button>
-                                <button class="but-2" type="button">Детальніше</button>
+                            <div class="delivery__button">
+                                <button class="but-app" type="button">Залишити заявку</button>
+                                <button class="but-info" type="button">Детальніше</button>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <img class="img-delivery" src="./Images/delivery 2.jpg" alt="delivery">
-                        <div class="category-delivery">
-                            <h3>Авто - прискорена</h3>
-                            <ul class="info-delivery">
-                                <li>
+                        <img class="delivery__img" src="./Images/delivery 2.jpg" alt="delivery">
+                        <div class="delivery__category">
+                            <h3 class="delivery__subtitle">Авто - прискорена</h3>
+                            <ul class="delivery__info-list">
+                                <li class="delivery__info-item">
                                     <svg width="22" height="22">
                                         <use href="./Images/icons.svg#icon-calendar">
                                     </svg>
                                     9-15 днів
                                 </li>
-                                <li>
+                                <li class="delivery__info-item">
                                     <svg width="24" height="24">
                                         <use href="./Images/icons.svg#icon-box">
                                     </svg>
                                     від 5 кг
                                 </li>
                             </ul>
-                            <div class="prise-delivery">
-                                <span class="step1">від</span>
-                                <span class="step2">2,5</span>
-                                <span class="step3">$/кг</span>
+                            <div class="delivery__prise">
+                                <span class="part-1">від</span>
+                                <span class="part-2">2,5</span>
+                                <span class="part-3">$/кг</span>
                             </div>
-                            <div class="button-delivery">
-                                <button class="but-1" type="button">Залишити заявку</button>
-                                <button class="but-2" type="button">Детальніше</button>
+                            <div class="delivery__button">
+                                <button class="but-app" type="button">Залишити заявку</button>
+                                <button class="but-info" type="button">Детальніше</button>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <img class="img-delivery" src="./Images/delivery 3.jpg" alt="delivery">
-                        <div class="category-delivery">
-                            <h3>Авіа</h3>
-                            <ul class="info-delivery">
-                                <li>
+                        <img class="delivery__img" src="./Images/delivery 3.jpg" alt="delivery">
+                        <div class="delivery__category">
+                            <h3 class="delivery__subtitle">Авіа</h3>
+                            <ul class="delivery__info-list">
+                                <li class="delivery__info-item">
                                     <svg width="22" height="22">
                                         <use href="./Images/icons.svg#icon-calendar">
                                     </svg>
                                     9-15 днів
                                 </li>
-                                <li>
+                                <li class="delivery__info-item">
                                     <svg width="24" height="24">
                                         <use href="./Images/icons.svg#icon-box">
                                     </svg>
                                     від 5 кг
                                 </li>
                             </ul>
-                            <div class="prise-delivery">
-                                <span class="step1">від</span>
-                                <span class="step2">2,5</span>
-                                <span class="step3">$/кг</span>
+                            <div class="delivery__prise">
+                                <span class="part-1">від</span>
+                                <span class="part-2">2,5</span>
+                                <span class="part-3">$/кг</span>
                             </div>
-                            <div class="button-delivery">
-                                <button class="but-1" type="button">Залишити заявку</button>
-                                <button class="but-2" type="button">Детальніше</button>
+                            <div class="delivery__button">
+                                <button class="but-app" type="button">Залишити заявку</button>
+                                <button class="but-info" type="button">Детальніше</button>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <img class="img-delivery" src="./Images/delivery 4.jpg" alt="delivery">
-                        <div class="category-delivery">
-                            <h3>Залізниця</h3>
-                            <ul class="info-delivery">
-                                <li>
+                        <img class="delivery__img" src="./Images/delivery 4.jpg" alt="delivery">
+                        <div class="delivery__category">
+                            <h3 class="delivery__subtitle">Залізниця</h3>
+                            <ul class="delivery__info-list">
+                                <li class="delivery__info-item">
                                     <svg width="22" height="22">
                                         <use href="./Images/icons.svg#icon-calendar">
                                     </svg>
                                     9-15 днів
                                 </li>
-                                <li>
+                                <li class="delivery__info-item">
                                     <svg width="24" height="24">
                                         <use href="./Images/icons.svg#icon-box">
                                     </svg>
                                     від 5 кг
                                 </li>
                             </ul>
-                            <div class="prise-delivery">
-                                <span class="step1">від</span>
-                                <span class="step2">2,5</span>
-                                <span class="step3">$/кг</span>
+                            <div class="delivery__prise">
+                                <span class="part-1">від</span>
+                                <span class="part-2">2,5</span>
+                                <span class="part-3">$/кг</span>
                             </div>
-                            <div class="button-delivery">
-                                <button class="but-1" type="button">Залишити заявку</button>
-                                <button class="but-2" type="button">Детальніше</button>
+                            <div class="delivery__button">
+                                <button class="but-app" type="button">Залишити заявку</button>
+                                <button class="but-info" type="button">Детальніше</button>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <img class="img-delivery" src="./Images/delivery 5.jpg" alt="delivery">
-                        <div class="category-delivery">
-                            <h3>Море</h3>
-                            <ul class="info-delivery">
-                                <li>
+                        <img class="delivery__img" src="./Images/delivery 5.jpg" alt="delivery">
+                        <div class="delivery__category">
+                            <h3 class="delivery__subtitle">Море</h3>
+                            <ul class="delivery__info-list">
+                                <li class="delivery__info-item">
                                     <svg width="22" height="22">
                                         <use href="./Images/icons.svg#icon-calendar">
                                     </svg>
                                     9-15 днів
                                 </li>
-                                <li>
+                                <li class="delivery__info-item">
                                     <svg width="24" height="24">
                                         <use href="./Images/icons.svg#icon-box">
                                     </svg>
                                     від 5 кг
                                 </li>
                             </ul>
-                            <div class="prise-delivery">
-                                <p class="step1">від  </p>
-                                <p class="step2">2,5</p>
-                                <p class="step3">$/кг</p>
+                            <div class="delivery__prise">
+                                <p class="part-1">від  </p>
+                                <p class="part-2">2,5</p>
+                                <p class="part-3">$/кг</p>
                             </div>
-                            <div class="button-delivery">
-                                <button class="but-1" type="button">Залишити заявку</button>
-                                <button class="but-2" type="button">Детальніше</button>
+                            <div class="delivery__button">
+                                <button class="but-app" type="button">Залишити заявку</button>
+                                <button class="but-info" type="button">Детальніше</button>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <div class="swiper-button-prev swiper-button-prev-delivery"></div>
-                <div class="swiper-button-next swiper-button-next-delivery"></div>
+                
             </div>
+            <div class="swiper-button-prev swiper-button-prev-delivery"></div>
+            <div class="swiper-button-next swiper-button-next-delivery"></div>
             <script src="./js/swiper-bundle.min.js"></script>
-            <script>
-            // Слайдер для доставки
-            const swiperDelivery = new Swiper('.swiper-delivery', {
-                loop: true,
-                slidesPerView: 3,
-                spaceBetween: 30,
-                pagination: {
-                    el: '.swiper-pagination-delivery',
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-delivery',
-                    prevEl: '.swiper-button-prev-delivery',
-                },
-            });
-        </script>
+            <script src="./js/delivery-slider.js"></script>
         </div>
     </section>
     <!-- Слайдер для послуг -->
-    <section class="services top-bottom-retreat">
+    <section id="services" class="services top-bottom-retreat">
         <div class="container">
-            <h2>Послуги</h2>
-            <div class="services-line"></div>
+            <h2 class="services__title">Послуги</h2>
+            <div class="services__line"></div>
             <div class="swiper swiper-services">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
-                        <div class="services-card img-1">
-                            <h3>Викуп товару</h3>
-                            <p>Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
-                            <button class="but-2" type="button">Детальніше</button>
+                        <div class="services__card img-1">
+                            <h3 class="services__subtitle">Викуп товару</h3>
+                            <p class="services__text">Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
+                            <button class="services__button" type="button">Детальніше</button>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <div class="services-card img-2">
-                            <h3>Страхування вантажу</h3>
-                            <p>Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
-                            <button class="but-2" type="button">Детальніше</button>
+                        <div class="services__card img-2">
+                            <h3 class="services__subtitle">Страхування вантажу</h3>
+                            <p class="services__text">Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
+                            <button class="services__button" type="button">Детальніше</button>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <div class="services-card img-3">
-                            <h3>Оренда складу</h3>
-                            <p>Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
-                            <button class="but-2" type="button">Детальніше</button>
+                        <div class="services__card img-3">
+                            <h3 class="services__subtitle">Оренда складу</h3>
+                            <p class="services__text">Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
+                            <button class="services__button" type="button">Детальніше</button>
                         </div>  
                     </li>
                     <li class="swiper-slide">
-                        <div class="services-card img-4">
-                            <h3>Переказ коштів</h3>
-                            <p>Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
-                            <button class="but-2" type="button">Детальніше</button>
+                        <div class="services__card img-4">
+                            <h3 class="services__subtitle">Переказ коштів</h3>
+                            <p class="services__text">Компанія - це повний комплекс логістичних послуг з доставки вантажів з Китаю до Росії - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-України.</p>
+                            <button class="services__button" type="button">Детальніше</button>
                         </div>
                     </li>
                 </ul>
-                <div class="swiper-button-prev swiper-button-prev-services"></div>
-                <div class="swiper-button-next swiper-button-next-services"></div>
+                
             </div>
-            
+            <div class="swiper-button-prev swiper-button-prev-services"></div>
+            <div class="swiper-button-next swiper-button-next-services"></div>
             <script src="./js/swiper-bundle.min.js"></script>
-            <script>
-                // Слайдер для послуг
-                const swiperServices = new Swiper('.swiper-services', {
-                    loop: true,
-                    centeredSlides: true,
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: '.swiper-pagination-services',
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next-services',
-                        prevEl: '.swiper-button-prev-services',
-                    },
-                });
-            </script>
+            <script src="./services-slider.js"></script>
         </div>
     </section> 
-
-    <section class="top-bottom-retreat">
+    <!-- часті запитання та задати запитання -->
+    <section id="company" class="top-bottom-retreat">
         <div class="container">
             <div class="company">
-                <div>
-                    <h2>про компанію</h2>
-                    <div class="company-line"></div>
-                    <p>
+                <div class="company__info">
+                    <h2 class="company__title">про компанію</h2>
+                    <div class="company__line"></div>
+                    <p class="company__text">
                         Компанія Азія Карго - це повний комплекс логістичних послуг з доставки вантажів з Китаю до України - збірні вантажі та цілісні товарні партії, послуги посередника ТаоБао, КАРГО Китай-Україна. 
                         Для вашої зручності є тарифи на легкий та важкий куб. 
                         Ми працюємо на ринку понад 4 роки, а керівники компанії займаються логістикою вже понад 11 років.
@@ -444,13 +446,13 @@
                 </div>
                 <img width="500" height="500" src="./Images/company.svg" alt="pen">
             </div>
-            <div class="drop-question">
-                <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
-                <div class="question-line"></div>
+            <div class="drop__question">
+                <h2 class="drop__question-title">Часті запитання</h2>
+                <div class="drop__question-line"></div>
                 <div class="faq-container">
                     <ul class="faq-section">
                         <li class="faq-item">
-                            <div class="faq-question">Как рассчитывается стоимость доставки?
+                            <div class="faq-question"><p>Як розраховується вартість доставки?</p>
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </use></svg>
@@ -458,7 +460,7 @@
                             <div class="faq-answer">Тут буде відповідь на питання.</div>
                         </li>
                         <li class="faq-item">
-                            <div class="faq-question">Как происходит оплата за доставку груза?
+                            <div class="faq-question"><p>Як відбувається оплата за доставку вантажу?</p>
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </use></svg>
@@ -466,7 +468,7 @@
                             <div class="faq-answer">Тут буде відповідь на питання.</div>
                         </li>
                         <li class="faq-item">
-                            <div class="faq-question">Как быстро оформить заказ на доставку из Китая в Россию?
+                            <div class="faq-question"><p>Як швидко оформити замовлення на доставку в Україну?</p>
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </use></svg>
@@ -474,15 +476,15 @@
                             <div class="faq-answer">Тут буде відповідь на питання.</div>
                         </li>
                         <li class="faq-item">
-                            <div class="faq-question">Можно ли через вас оплатить товар поставщику?
+                            <div class="faq-question"><p>Чи можна через вас сплатити товар постачальнику?</p>
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </use></svg>
                             </div>
-                            <div class="faq-answer">Да, мы предоставляем такую услугу. Мы можем взять оплату товара в Китае на себя. Если у вас нет валютного счёта, то можете оплатить товар в рублях на наш счет в России.</div>
+                            <div class="faq-answer">Так, ми надаємо таку послугу. Ми можемо взяти оплату товару у Китаї на себе. Якщо у вас немає валютного рахунку, то можете сплатити товар у рублях на наш рахунок в Україну.</div>
                         </li>
                         <li class="faq-item">
-                            <div class="faq-question">В чём особенность КАРГО доставки из Китая?
+                            <div class="faq-question"><p>У чому особливість КАРГО доставки з Китаю?</p>
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </use></svg>
@@ -490,7 +492,7 @@
                             <div class="faq-answer">Тут буде відповідь на питання.</div>
                         </li>
                         <li class="faq-item">
-                            <div class="faq-question">Какой срок доставки из Китая?
+                            <div class="faq-question"><p>Який термін доставки із Китаю?</p>
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </use></svg>
@@ -498,15 +500,15 @@
                             <div class="faq-answer">Тут буде відповідь на питання.</div>
                         </li>
                     </ul>
-                    <div class="contact-form">
-                        <h3>Остались вопросы?</h3>
-                        <p>Оставьте заявку и наш менеджер ответит вам в ближайшее время</p>
-                        <form>
-                            <input type="text" name="name" placeholder="Имя *" required>
-                            <input type="tel" name="phone" placeholder="Телефон *" required>
-                            <input type="email" name="email" placeholder="E-mail" required>
-                            <textarea name="message" placeholder="Ваш вопрос" required></textarea>
-                            <button type="submit">Отправить запрос
+                    <div class="contact">
+                        <h3 class="contact__title">Залишились питання?</h3>
+                        <p class="contact__text">Залишіть заявку і наш менеджер відповість вам найближчим часом</p>
+                        <form class="contact__form">
+                            <input class="form__input" type="text" name="name" placeholder="Імя *" required>
+                            <input class="form__input" type="tel" name="phone" placeholder="Телефон *" required>
+                            <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+                            <textarea class="form__textarea" name="message" placeholder="Ваше запитання" required></textarea>
+                            <button class="form__button" type="submit">Надіслати запит
                                 <svg width="27" height="27">
                                     <use href="./Images/icons.svg#icon-arrow-circle-left">
                                 </use></svg>
@@ -515,40 +517,22 @@
                     </div>
                 </div>
             </div>
-            <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const faqItems = document.querySelectorAll('.faq-item');
-                
-                faqItems.forEach(item => {
-                    const question = item.querySelector('.faq-question');
-                    question.addEventListener('click', () => {
-                        // Закрити всі інші секції
-                        faqItems.forEach(otherItem => {
-                            if (otherItem !== item) {
-                                otherItem.classList.remove('expanded');
-                            }
-                        });
-                        // Відкрити або закрити поточну секцію
-                        item.classList.toggle('expanded');
-                    });
-                });
-            });
-            </script>
+            <script src="./js/question.js"></script>
         </div>
     </section>
-
-    <section class="cooperation top-bottom-retreat">
+    <!-- про співпрацю -->
+    <section id="cooperation" class="cooperation top-bottom-retreat">
         <div class="container">
             <h2 class="cooperation__title">Готові до співпраці?</h2>
             <h3 class="cooperation__subtitle">Зареєструйте вантаж!</h3>
-            <div class="cooperation-line"></div>
+            <div class="cooperation__line"></div>
             <div class="cooperation__content">
+                <img width="555" height="406" src="./Images/cooperation-1.jpg" alt="співпраця">
                 <div class="cooperation__instructions">
                     <p class="cooperation__text">• Для того, щоб розпочати співпрацю, необхідно оформити вантаж, вказавши інформацію про вміст вантажу, його вартість та кількість. А також прикріпивши фотографії до заявки.</p>
                     <p class="cooperation__text">• Якщо потрібна перевірка товару на відповідність кількості, то при оформленні вантажу на нашому сайті вкажіть це у графі "Примітка". Дана послуга платна та складає 3 юаня за одну позицію в замовленні. Будь-які додаткові перевірки вантажу обговорюються індивідуально, у тому числі й їх вартість.</p>
                     <p class="cooperation__text">• До відправки вантажу на наш склад в Китаї обов'язково подбайте про те, щоб зробити маркування, з номером Вашого замовлення у нас на сайті, для кожної зовнішньої коробки, щоб ми змогли визначити саме Ваш вантаж. Якщо у Вас немає можливості зробити це самостійно, попросіть про це свого постачальника.</p>
                 </div>
-                <img width="555" height="406" src="./Images/cooperation-1.jpg" alt="співпраця">
             </div>
             <div class="cooperation__actions">
                 <img width="555" height="406" src="./Images/cooperation-2.jpg" alt="співпраця">
@@ -564,10 +548,11 @@
             </div>
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="footer-line"></div>
+    <!-- футер -->
+    <footer id="footer" class="footer">
+        <div class="footer__line"></div>
         <div class="container">
+            
             <div class="footer__logo-contact">
                 <a href="index.html" class="footer__logo-link">
                     <img src="Images/logo.svg" width="172" height="48" alt="логотип">
@@ -638,6 +623,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
