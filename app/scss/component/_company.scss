@@ -1,3 +1,4 @@
+@use '../utility/variables' as vars;
 .company {
     display: flex;
     align-items: center;
@@ -14,7 +15,7 @@
         line-height: 1.2em;
         font-size: 36px;
         font-weight: 700;
-        color: $white;
+        color: vars.$white;
         margin-bottom: 24px;
         text-transform: uppercase;
     }
@@ -23,7 +24,7 @@
         font-size: 18px;
         line-height: 1.7em;
         font-weight: 300;
-        color: $white;
+        color: vars.$white;
     }
 
     &__line {
@@ -39,7 +40,7 @@
             left: 0;
             width: 85px;
             height: 2px;
-            background-color: $hover-efect; // Колір лінії
+            background-color: vars.$hover-efect; // Колір лінії
             z-index: 1;
         }
     }
@@ -51,7 +52,7 @@
             font-size: 18px;
             line-height: 1.7em;
             font-weight: 300;
-            color: $white;
+            color: vars.$white;
         }
     }
 
@@ -59,7 +60,7 @@
         line-height: 1.2em;
         font-size: 36px;
         font-weight: 700;
-        color: $white;
+        color: vars.$white;
         margin-bottom: 24px;
         text-align: center;
         text-transform: uppercase;
@@ -77,7 +78,7 @@
             position: absolute;
             width: 85px;
             height: 2px;
-            background-color: $basis; // Колір лінії
+            background-color: vars.$basis; // Колір лінії
             z-index: 1;
         }
     }
@@ -93,10 +94,10 @@
 }
 
 .faq-item {
-    background-color: $background;
+    background-color: vars.$background;
     border-radius: 10px;
     margin-bottom: 16px;
-    border: 1px $border solid;
+    border: 1px vars.$border solid;
     overflow: hidden;
     cursor: pointer;
     max-width: 716px;
@@ -104,19 +105,19 @@
 }
 
 .faq-item.expanded {
-    border-color: $white;
-    background-color: $border; /* Змінений колір для активного стану */
+    border-color: vars.$white;
+    background-color: vars.$border; /* Змінений колір для активного стану */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .faq-question {
     padding: 21px 19px 21px 34px;
-    border-color: $white;
+    border-color: vars.$white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     P {
-        color: $white;
+        color: vars.$white;
         font-size: 18px;
         font-weight: 700;
     }
@@ -124,26 +125,26 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     svg{
         transition: transform 0.3s ease, color 0.3s ease;
-        color: $white;
+        color: vars.$white;
     }
 }
 
 .faq-item.expanded .faq-question {
-    background-color: $white;
+    background-color: vars.$white;
     p {
-        color: $black; 
+        color: vars.$black; 
     }
     svg{
         transform: rotate(-90deg);
-        color: $basis;
+        color: vars.$basis;
     }
 }
 
 .faq-answer {
-    background-color: $white;
+    background-color: vars.$white;
     padding: 0 19px 21px 34px;
     font-size: 16px;
-    color: $black;
+    color: vars.$black;
     display: none;
 }
 
@@ -155,7 +156,7 @@
 
 .contact {
     flex: 1;
-    background-color: $background-2;
+    background-color: vars.$background-2;
     padding: 38px 40px;
     border-radius: 20px;
     box-shadow: 5px 15px 40px rgba(11.40, 24.06, 97.75, 0.32);
@@ -163,7 +164,7 @@
     &__title {
         font-size: 24px;
         font-weight: 700;
-        color: $white;
+        color: vars.$white;
         margin-bottom: 8px;
     }
 
@@ -180,24 +181,24 @@
             width: 100%;
             padding: 18px 20px 19px;
             margin-bottom: 14px;
-            background-color: $white;
+            background-color: vars.$white;
             border: none;
-            color: $input;
+            color: vars.$input;
             border-radius: 10px;
             font-size: 15px;
             font-weight: 300;
-            transition: box-shadow $transition;
+            transition: box-shadow vars.$transition;
 
             &:focus-visible {
                 outline: none;
             }
 
             &:hover {
-                box-shadow: 0px 0px 4px 2px $basis;
+                box-shadow: 0px 0px 4px 2px vars.$basis;
             }
 
             &:focus {
-                box-shadow: 0px 0px 4px 2px $hover-efect;
+                box-shadow: 0px 0px 4px 2px vars.$hover-efect;
             }
         }
 
@@ -208,28 +209,28 @@
         &__button {
             width: 100%;
             padding: 23px 33px 22px;
-            background-color: $basis;
+            background-color: vars.$basis;
             border: none;
-            color: $white;
+            color: vars.$white;
             font-size: 18px;
             border-radius: 90px;
             cursor: pointer;
             display: flex;
             align-items: center;
-            transition: background-color $transition;
+            transition: background-color vars.$transition;
 
             svg {
                 margin-left: auto;
-                color: $orang;
-                transition: color $transition;
+                color: vars.$orang;
+                transition: color vars.$transition;
             }
 
             &:hover,
             &:focus {
-                background-color: $hover-efect;
+                background-color: vars.$hover-efect;
 
                 svg {
-                    color: $white;
+                    color: vars.$white;
                 }
             }
         }

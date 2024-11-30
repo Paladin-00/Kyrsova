@@ -1,3 +1,4 @@
+@use '../utility/variables' as vars;
 .swiper__slide-content {
     max-height: 700px ;
     // height: 100%;
@@ -16,7 +17,7 @@
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2em;
-    color: $white;
+    color: vars.$white;
 }
 
 .swiper__slide-text {
@@ -35,25 +36,25 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    background-color: $basis;
+    background-color: vars.$basis;
     padding: 14px 27px;
     border-radius: 90px;
-    color: $white;
+    color: vars.$white;
     gap: 25px;
     border: none;
-    transition: background-color $transition;
+    transition: background-color vars.$transition;
 
     svg {
-        transition: color $transition;
-        color: $orang;
+        transition: color vars.$transition;
+        color: vars.$orang;
     }
 
     &:hover,
     &:focus {
-        background-color: $hover-efect;
+        background-color: vars.$hover-efect;
 
         svg {
-            color: $white;
+            color: vars.$white;
         }
     }
 }
@@ -64,28 +65,28 @@
 }
 
 .background_img-1{
-    background-image: url("../../Images/dostavks\ 1.jpg");
+    background-image: url("../images/dostavks\ 1.jpg");
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
     // background: linear-gradient(90deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
 }
 .background_img-2{
-    background-image: url("../../Images/dostavks\ 2.jpg");
+    background-image: url("../images/dostavks\ 2.jpg");
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
     // background: linear-gradient(90deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
 }
 .background_img-3{
-    background-image: url("../../Images/dostavks\ 3.jpg");
+    background-image: url("../images/dostavks\ 3.jpg");
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
     // background: linear-gradient(90deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
 }
 .background_img-4{
-    background-image: url("../../Images/dostavks\ 4.jpg");
+    background-image: url("../images/dostavks\ 4.jpg");
     background-position: center center;
     background-size: cover;
     border-radius: 20px;

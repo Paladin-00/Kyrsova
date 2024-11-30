@@ -1,8 +1,11 @@
+@use '../utility/variables' as vars;
 .header {
     display: flex;
     align-items: center;
     
     .container {
+        position: relative;
+        z-index: 1000;
         display: flex;
         align-items: center;
         padding-top: 25px;
@@ -15,14 +18,14 @@
         border-radius: 90px;
         font-size: 15px;
         padding: 14px 27px;
-        background-color: $basis;
-        color: $white;
+        background-color: vars.$basis;
+        color: vars.$white;
         cursor: pointer;
-        transition: background-color $transition;
+        transition: background-color vars.$transition;
 
         &:hover,
         &:focus {
-            background-color: $hover-efect;
+            background-color: vars.$hover-efect;
         }
     }
 
@@ -43,13 +46,13 @@
         font-weight: 400;
         line-height: 1.4em;
         text-decoration: none;
-        color: $white;
+        color: vars.$white;
         // position: relative;
-        transition: color $transition;
+        transition: color vars.$transition;
 
         &:hover,
         &:focus {
-            color: $hover-efect;
+            color: vars.$hover-efect;
         }
     }
     
@@ -92,10 +95,10 @@
     top: -100%; /* Початково ховаємо модалку за межами екрана */
     left: 0;
     width: 100%;
-    background-color: $background-2;
+    background-color: vars.$background-2;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: top 0.3s ease;
-    z-index: 1000;
+    
     display: flex;
     justify-content: center;
 
@@ -120,12 +123,12 @@
         font-weight: 400;
         line-height: 1.2em;
         text-decoration: none;
-        color: $white;
-        transition: color $transition;
+        color: vars.$white;
+        transition: color vars.$transition;
 
         &:hover,
         &:focus {
-            color: $hover-efect;
+            color: vars.$hover-efect;
         }
     }
     &__button {
@@ -135,24 +138,24 @@
         border-radius: 90px;
         font-size: 15px;
         padding: 14px 27px;
-        background-color: $basis;
-        color: $white;
+        background-color: vars.$basis;
+        color: vars.$white;
         cursor: pointer;
         width: 100%;
-        transition: background-color $transition;
+        transition: background-color vars.$transition;
 
         svg {
             margin-left: auto;
-            transition: color $transition;
-            color: $orang;
+            transition: color vars.$transition;
+            color: vars.$orang;
         }
 
         &:hover,
         &:focus {
-            background-color: $hover-efect;
+            background-color: vars.$hover-efect;
 
             svg {
-                color: $white;
+                color: vars.$white;
             }
         }
     }

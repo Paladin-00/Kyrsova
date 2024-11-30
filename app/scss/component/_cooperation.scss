@@ -1,7 +1,8 @@
+@use '../utility/variables' as vars;
 .cooperation {
     display: flex;
     justify-content: center;
-    background-color: $background-2;
+    background-color: vars.$background-2;
 
     &__line {
         position: relative; // Додано для псевдоелемента
@@ -15,7 +16,7 @@
             position: absolute;
             width: 85px;
             height: 2px;
-            background-color: $hover-efect; // Колір лінії
+            background-color: vars.$hover-efect; // Колір лінії
             z-index: 1;
         }
     }
@@ -23,7 +24,7 @@
     &__title {
         display: flex;
         justify-content: center;
-        color: $white;
+        color: vars.$white;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.2em;
@@ -34,7 +35,7 @@
     &__subtitle {
         display: flex;
         justify-content: center;
-        color: $white;
+        color: vars.$white;
         font-size: 24px;
         font-weight: 300;
         line-height: 1.2em;
@@ -62,7 +63,7 @@
         font-size: 17px;
         line-height: 1.5em;
         font-weight: 300;
-        color: $white;
+        color: vars.$white;
     }
 
     &__form {
@@ -83,36 +84,36 @@
         font-size: 17px;
         line-height: 1.5em;
         font-weight: 300;
-        color: $white;
+        color: vars.$white;
     }
 
     &__button {
         display: flex;
         width: 300px;
         align-items: center;
-        background-color: $basis;
+        background-color: vars.$basis;
         padding: 23px 21px 22px 33px;
         border: none;
-        color: $white;
+        color: vars.$white;
         border-radius: 90px;
         font-size: 16px;
         font-weight: 600;
         line-height: 1.4em;
         cursor: pointer;
-        transition: background-color $transition;
+        transition: background-color vars.$transition;
 
         svg {
-            transition: color $transition;
+            transition: color vars.$transition;
             margin-left: auto;
-            color: $orang;
+            color: vars.$orang;
         }
 
         &:hover,
         &:focus {
-            background-color: $hover-efect;
+            background-color: vars.$hover-efect;
 
             svg {
-                color: $white;
+                color: vars.$white;
             }
         }
     }
