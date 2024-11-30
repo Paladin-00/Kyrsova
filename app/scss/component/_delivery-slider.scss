@@ -160,7 +160,10 @@
 
 
 @media (max-width: 768px) {
-    
+    .swiper-button-next-delivery,
+    .swiper-button-prev-delivery {
+      display: none !important; /* Ховаємо стрілки */
+    }
 }
 
 @media (max-width: 480px) {
