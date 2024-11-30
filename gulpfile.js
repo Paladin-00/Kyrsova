@@ -8,16 +8,16 @@ const browserSync = require('browser-sync').create();
 
 
 
-function scripts() {
-    return src([
-        'app/js/main.js',
-        'node_modules/swiper/swiper-bundle.js'
-    ])
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(dest('app/js'))
-    .pipe(browserSync.stream())
-}
+// function scripts() {
+//     return src([
+//         'app/js/main.js',
+//         'node_modules/swiper/swiper-bundle.js'
+//     ])
+//     .pipe(concat('main.min.js'))
+//     .pipe(uglify())
+//     .pipe(dest('app/js'))
+//     .pipe(browserSync.stream())
+// }
 
 
 function styles() {
@@ -31,23 +31,24 @@ function styles() {
 
 function watching() {
     watch(['app/scss/style.scss'], styles)
-    watch(['app/js/*.js'], scripts)
-    watch(['app/test.html']).on('change', browserSync.reload);
+    // watch(['app/js/*.js'], scripts)
+    // watch(['app/test.html']).on('change', browserSync.reload);
 }
 
 
-function browsersync() {
-    browserSync.init({
-        server: {
-            baseDir: "."
-        }
-    });
-}
+// function browsersync() {
+//     browserSync.init({
+//         server: {
+//             baseDir: "."
+//         }
+//     });
+// }
 
 
 exports.styles = styles;
-exports.scripts = scripts;
+// exports.scripts = scripts;
 exports.watching = watching;
-exports.browsersync = browsersync;
+// exports.browsersync = browsersync;
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+// exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, watching);
