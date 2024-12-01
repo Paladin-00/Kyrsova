@@ -158,13 +158,10 @@
 
 
 @media (max-width: 768px) {
-    // .swiper-button-next-services {
-    //     top: 640% !important;
-    // }
-    // .swiper-button-prev-services {
-    //     top: 640% !important;
-
-    // }
+    .swiper-button-prev-services,
+    .swiper-button-next-services {
+        display: none !important;
+    }
 }
 
 @media (max-width: 480px) {
